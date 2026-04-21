@@ -2,7 +2,7 @@ class DailyTasks < Formula
   desc "Terminal-first daily task manager with web and mobile companions"
   homepage "https://github.com/jmaciasluque/daily-tasks"
   url "https://github.com/jmaciasluque/daily-tasks/archive/refs/tags/v0.7.1.tar.gz"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  sha256 "c64c06d7e8b60a34970a58ed092207f658b31bde0335f5dd77c581bb009b9185"
   head "https://github.com/jmaciasluque/daily-tasks.git", branch: "main"
 
   depends_on "go" => :build
