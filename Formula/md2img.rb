@@ -27,7 +27,7 @@ class Md2img < Formula
   depends_on "ghostscript"
 
   def install
-    bin.install "md2img"
+    bin.install "md2img-#{OS.mac? ? "darwin" : "linux"}-#{Hardware::CPU.arch}" => "md2img"
   end
 
   test do
