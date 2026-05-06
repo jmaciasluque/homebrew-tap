@@ -1,26 +1,26 @@
 class Md2img < Formula
   desc "Convert Markdown to styled PNG images"
   homepage "https://github.com/jmaciasluque/md2img"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/jmaciasluque/md2img/releases/download/v#{version}/md2img-darwin-arm64.tar.gz"
-      sha256 "d50ca411daa2f3c63338ee7df519d172add775a594b12aa337e8b742694acfe0"
+      sha256 "f70823083d0ba48814601cefe0257b556e01a51a72e830aae6246da49b47c547"
     else
       url "https://github.com/jmaciasluque/md2img/releases/download/v#{version}/md2img-darwin-amd64.tar.gz"
-      sha256 "f10f6cc2d139017a08005460805a6a6f66f9048048612887ea4b031a1da53cb9"
+      sha256 "c4894295612d98f9d78e31dcb043186b24cc38ccdff7029ae15b3dac898fb1e1"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/jmaciasluque/md2img/releases/download/v#{version}/md2img-linux-arm64.tar.gz"
-      sha256 "8726ed9c474914db8c20bae47d1d4a5fefdf3faf759062b0b64647daba5e43f3"
+      sha256 "a7a217d409250ca2a6b4e47d73480f05b02a2ef2ed6a76d4b41804a5955175cb"
     else
       url "https://github.com/jmaciasluque/md2img/releases/download/v#{version}/md2img-linux-amd64.tar.gz"
-      sha256 "962fefe1f22cfb026562ecc5ec461b49e73d394483d12255697713c0be78443b"
+      sha256 "c42756456d305d3c5fd60a39e29286e158e86317689bc900757a7b89634e7b3f"
     end
   end
 
